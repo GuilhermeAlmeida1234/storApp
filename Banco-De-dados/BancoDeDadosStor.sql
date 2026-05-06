@@ -1,5 +1,5 @@
 CREATE DATABASE StorApp
 
-Create table 
+Create table tbl_djadoas
 
 
