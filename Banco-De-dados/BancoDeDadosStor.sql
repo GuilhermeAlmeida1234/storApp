@@ -1,5 +1,5 @@
 CREATE DATABASE StorApp
-
+USE StorApp
 Create table Tbl_Prestador (
  id_Prestador INT IDENTITY PRIMARY KEY,
  Nome_Prestador Varchar (70),
