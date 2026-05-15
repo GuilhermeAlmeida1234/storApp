@@ -1,0 +1,38 @@
+.nav-link{
+    transition: 0.3s;
+}
+.nav-link:hover{
+    color: black;
+    transform: scale(1.3);
+    text-decoration: underline;
+}
+.navbar{
+    padding: 30px 50px;
+}
+.navbar-collapse{
+    gap: 50px;
+}
+.navbar-nav{
+    gap: 30px;
+    font-size: 1.2rem;
+}
+.navbar-brand{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+}
+.navbar-brand img{
+    width: 50px;
+    height: 50px;
+}
+.form-control{
+    width: 450px;
+}
+.usuario{
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
