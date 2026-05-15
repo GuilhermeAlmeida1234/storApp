@@ -43,5 +43,3 @@ CREATE TABLE tbl_servicoRealizado(
 	FOREIGN KEY (IDPrestador) REFERENCES tbl_prestador (IDPrestador),
 	FOREIGN KEY (IDContratante) REFERENCES tbl_contratante (IDContratante)
 )
-
-
