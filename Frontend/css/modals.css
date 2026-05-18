@@ -1,9 +1,19 @@
-.modal form {
-    margin-top: 20px;
-}
-.modal input,
+body,
+button,
+input,
 textarea,
 select {
+    font-family: 'Playfair Display', serif;
+}
+.custom-modal form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.custom-modal input,
+.custom-modal textarea,
+.custom-modal select {
     width: 100%;
     max-width: 400px;
     padding: 10px;
@@ -11,7 +21,7 @@ select {
     border: none;
     margin-top: 10px;
 }
-.modal{
+.custom-modal{
     position: fixed;
     inset: 0;
     background: rgba(0,0,0,0.8);
@@ -24,12 +34,19 @@ select {
     z-index: 11;
     pointer-events: none;
 }
-.modal.active {
+.custom-modal h2{
+    color: white;
+    font-size: 1.5rem;
+}
+.custom-modal p {
+    color: white;
+}
+.custom-modal.active {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
 }
-.modal-content {
+.custom-modal-content {
     background: #111;
     padding: 50px;
     border-radius: 12px;
@@ -39,10 +56,10 @@ select {
     transform: scale(0.7);
     transition: 0.3s;
 }
-.modal.active .modal-content {
+.custom-modal.active .custom-modal-content {
     transform: scale(1);
 }
-.modal-content input{
+.custom-modal-content input{
     margin-top: 10px;
 }
 .fechar{
@@ -81,4 +98,14 @@ select {
 }
 .inputEmail{
     margin-bottom: 10px;
+}
+.fechar{
+    color: white;
+    float: right;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.fechar:hover {
+    color: #ff5c00;
 }
