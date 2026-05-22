@@ -13,12 +13,11 @@
 </head>
 <body>
     <header>
-        <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
-                    <img src="../../imagens/logo.png" alt="Logo" width="30" height="24">
+                    <img src="../../../imagens/imagens/logo.png" alt="Logo" width="30" height="24">
                     StorAPP
                     </a>
                 </div>
@@ -49,15 +48,14 @@
                         <li><a class="dropdown-item" href="#">Another action</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
                     </li>
+                    </ul>
                     <li class="nav-item">
-                        <button class="btn usuario nav-link">
-                            <i class="fa-solid fa-user"></i>
+                        <button class="btn usuario nav-link" type="button">
+                            <i class="fa-solid fa-user" id="userIcon"></i>
                         </button>
                     </li>
                 </ul>
-                
                 </div>
             </div>
         </nav>
@@ -68,6 +66,33 @@
     <footer>
 
     </footer>
-    <script src="../js/view/login.js"></script>
+    <div class="custom-modal" id="loginModal">
+        <div class="custom-modal-content">
+            <span class="fechar">&times;</span>
+            <h2>Login</h2>
+            <form id="formLogin" novalidate>
+                <input type="text" name="Email" placeholder="Email" id="EmailLogin" required autocomplete="email">
+                <input type="password" name="Senha" placeholder="Senha" class="inputSenha" id="SenhaLogin" required>
+                <button type="submit" class="btnSubmit" id="btnSubmitLogin">Entrar</button>
+            </form>
+            <p>
+                Não tem uma conta?
+            </p>
+            <a href="#" id="abrirCadastro">Cadastre-se</a>
+        </div>
+    </div>
+    <div class="custom-modal" id="cadastroModal">
+        <div class="custom-modal-content">
+            <span class="fechar">&times;</span>
+            <h2>Cadastro</h2>
+            <form id="formCadastro" novalidate>
+                <input type="text" name="email" placeholder="Email" required class="inputEmail" id="EmailCadastro" autocomplete="email">
+                <input type="password" name="senha" placeholder="Senha" required id="SenhaCadastro">
+                <input type="password" name="confirmarSenha" required placeholder="Confirmar Senha" class="inputSenha" id="ConfirmarSenhaCadastro">
+                <button type="submit" class="btnSubmit" id="btnSubmitCadastro">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+    <script src="../js/view/login.js" defer></script>
 </body>
 </html>

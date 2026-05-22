@@ -17,7 +17,7 @@
             <div class="container-fluid">
                 <div class="container-fluid">
                     <a class="navbar-brand cursor" href="#">
-                    <img src="../../imagens/logo.png" alt="Logo" width="30" height="24">
+                    <img src="../../../imagens/imagens/logo.png" alt="Logo" width="30" height="24">
                     StorAPP
                     </a>
                 </div>
@@ -52,7 +52,7 @@
                     </li>
                     <li class="nav-item">
                         <button class="btn usuario nav-link">
-                            <i class="fa-solid fa-user"></i>
+                            <i class="fa-solid fa-user" id="userIcon"></i>
                         </button>
                     </li>
                 </ul>
@@ -67,8 +67,8 @@
     <footer>
         
     </footer>
-    <div class="modal" id="loginModal">
-        <div class="modal-content">
+    <div class="custom-modal" id="loginModal">
+        <div class="custom-modal-content">
             <span class="fechar">&times;</span>
             <h2>Login</h2>
             <form id="formLogin" novalidate>
@@ -82,8 +82,8 @@
             <a href="#" id="abrirCadastro">Cadastre-se</a>
         </div>
     </div>
-    <div class="modal" id="cadastroModal">
-        <div class="modal-content">
+    <div class="custom-modal" id="cadastroModal">
+        <div class="custom-modal-content">
             <span class="fechar">&times;</span>
             <h2>Cadastro</h2>
             <form id="formCadastro" novalidate>
@@ -94,5 +94,6 @@
             </form>
         </div>
     </div>
+    <script src="../js/view/login.js" defer></script>
 </body>
 </html>
